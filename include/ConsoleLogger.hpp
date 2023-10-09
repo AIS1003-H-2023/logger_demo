@@ -6,8 +6,8 @@
 
 #include "Logger.hpp"
 
-class ConsoleLogger: public Logger {
-    
+class ConsoleLogger : public Logger {
+
 public:
     void log(const std::string &str) override {
         std::cout << str << std::endl;

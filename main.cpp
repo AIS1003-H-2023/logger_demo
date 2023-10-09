@@ -27,11 +27,11 @@ private:
 
 int main() {
 
-        auto consoleLogger = std::make_unique<ConsoleLogger>();
-    //    logMessage(log, "Hello from ConsoleLogger!");
-    //
-        auto fileLogger = std::make_unique<FileLogger>("test.txt");
-    //    logMessage(fileLogger, "Hello from FileLogger!");
+    auto consoleLogger = std::make_unique<ConsoleLogger>();
+//    logMessage(*consoleLogger, "Hello from ConsoleLogger!");
+
+    auto fileLogger = std::make_unique<FileLogger>("test.txt");
+//    logMessage(*fileLogger, "Hello from FileLogger!");
 
     Simulation sim;
     sim.setLogger(std::move(fileLogger));

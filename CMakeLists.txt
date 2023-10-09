@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.26)
-project(live_09_10)
+cmake_minimum_required(VERSION 3.17)
+project(logger_demo)
 
 set(CMAKE_CXX_STANDARD 17)
 

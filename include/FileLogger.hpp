@@ -7,10 +7,10 @@
 
 #include "Logger.hpp"
 
-class FileLogger: public Logger {
+class FileLogger : public Logger {
 
 public:
-    FileLogger(const std::filesystem::path& path): out_(path) {}
+    FileLogger(const std::filesystem::path &path) : out_(path) {}
 
     void log(const std::string &str) override {
         out_ << str << std::endl;

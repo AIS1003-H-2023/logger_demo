@@ -7,10 +7,9 @@
 class Logger {
 
 public:
-    virtual void log(const std::string& str) {
+    virtual void log(const std::string &str) {
         std::cout << "I dont't care about str input!!" << std::endl;
     }
-
 };
 
 #endif//LIVE_09_10_LOGGER_HPP
