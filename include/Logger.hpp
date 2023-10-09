@@ -7,7 +7,8 @@
 class Logger {
 
 public:
-    virtual void log(const std::string &str) {
+    //virtual void log(const std::string &str) = 0; // pure virtual
+    virtual void log(const std::string &str) { // Provides an implementation to demo Object Slicing
         std::cout << "I dont't care about str input!!" << std::endl;
     }
 };
